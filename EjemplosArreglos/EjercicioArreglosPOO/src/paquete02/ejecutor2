@@ -1,0 +1,19 @@
+package paquete02;
+
+import paquete01.LibretaCalificacion;
+
+public class ejecutor2 {
+    public static void main(String[] args) {
+        double[] notas = (10, 9, 8, 10);
+        String nombreEstudiante = "Jean Iñiguez";
+        
+        LibretaCalificacion libre = new LibretaCalificacion(nombreEstudiante, notas);
+        
+        // si se deja comentada la linea 13 el rato de imprimir no se presentaria nada y saldria como nulo 
+        libre.establecerPromedio();
+        // si se deja comentada la linea 13 el rato de imprimir no se presentaria nada y saldria como nulo 
+        libre.establecerPromedioCualitativo();
+        
+        System.out.printf("%S\n", libre);       
+    }
+}
